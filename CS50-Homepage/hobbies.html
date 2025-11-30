@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--HOBBIES PAGE!-->
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                // disc. for the pool button
+                let pool = document.querySelector('#swim_btn')
+                pool.addEventListener('click', function(){
+                    document.querySelector('#swim_img').innerHTML =
+                    "Lianne has been swimming for over 10 years. Lianne's childhood memories often involve a pool or something with water. This photo is a picture of her college's swim pool, Wagner College."
+                });
+                // disc. for the coding button
+                let code = document.querySelector('#code_btn')
+                code.addEventListener('click', function(){
+                    document.querySelector('#coding_img').innerHTML =
+                    "Lianne aspires to be a SWE(software engineer) at a FAANG company. She has had around 4+ experience of coding through highschool, and most especially the Harvard CS50 course!"
+                });
+                // disc. for the lifestyle button
+                let life = document.querySelector('#life_btn')
+                life.addEventListener('click', function(){
+                    document.querySelector('#lifestyle_img').innerHTML =
+                    "Lianne finds many intrests but her most recent interest has been lifestyle/fitness. Food science/gym culture inspires Lianne for her athletic/physical/mental status!"
+                });
+                // disc. for the shop button
+                let shop = document.querySelector('#shop_btn')
+                shop.addEventListener('click', function(){
+                    document.querySelector('#shop_img').innerHTML =
+                    "One of Lianne's favorite places to hang out with her friends is the mall(specifically the Cherry Hill Mall). If Lianne isn't at the in person mall, she will likely be online shopping looking for the best deals online!"
+                });
+            });
+        </script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Where's Lianne?</title>
+    </head>
+    <body>
+            Where's Lianne?
+        <h1 class ="header">
+            <!--creates buttons(images) for the user to click on that will enable more code to be shown when clicked-->
+            I think I may know! Lianne is likley:
+            <a class ="url" href = "index.html">Go Back</a>
+            <p class="par">
+                <button class="custom-button" id='swim_btn'> <img alt="wagner pool" src ="images/wagner_pool.webp">
+                <p id ="swim_img"></p>
+            </p>
+            <p class="par">
+                <button class="custom-button" id='code_btn'> <img alt="coding" src = "images/coding_img.jpeg">
+                <p id ="coding_img"></p>
+            </p>
+            <p class="par">
+                <button class="custom-button" id='life_btn'> <img alt="cooking photo" src = "images/cooking_img.jpg">
+                <p id ="lifestyle_img"></p>
+            </p>
+            <p>
+                <button class="custom-button" id='shop_btn'> <img alt="shopping image" src ="images/shopping_img.jpeg">
+                <p id ="shop_img"></p>
+            </p>
+            <!--TODO: create J.S. to check if the user has clicked the images and then innerHTML-->
+        </h1>
+    </body>
+    <footer class="footer">
+        Author: Lianne Poblador
+    </footer>
+</html>

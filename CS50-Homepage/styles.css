@@ -1,0 +1,61 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwyJ7eCBbd7bG3wyNxkT_K0UZ61TeeTupPK2eDC6yEpFs8rpNVDqaaE4I&s");
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    font-family:'Georgia', monospace;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.header {
+    background-color: LightSteelBlue;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.par{
+    color: #000000;
+    font-family: 'Cursive', sans-serif;
+    font-size: 35px;
+    background-color: #F0F8FF;
+    border-width: medium;
+    text-align: auto;
+}
+
+.custom-button {
+    background-color: LightSkyBlue;
+    font-family: 'Georgia', monospace;
+    font-size: 30px;
+    font-weight: 250;
+    border-color: LightSkyBlue;
+    border-width: 5px;
+}
+
+.url {
+    background-color: LightSkyBlue;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+}
+
+.footer {
+    font-family: 'Georgia', monospace;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.img {
+    width: 200px;
+    height: auto;
+}

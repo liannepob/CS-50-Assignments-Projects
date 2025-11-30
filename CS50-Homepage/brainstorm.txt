@@ -1,0 +1,23 @@
+this is where im going to brainstorm my basic homepage:
+1 intro page: provide:
+    toggles/buttons to accsess other pages of my webpage or other pages
+    provides images and aesthetics the most on the homepage
+2 hobbies page: like 'where's waldo", do a 'where's lianne..?'
+    then create 3 hobbies: introduce them as: likley: ...
+        swimming
+        coding
+        cooking/fitness
+        shopping
+3 where can i connect with lianne:
+    post a link to all socials with a hyperlink of the app icons
+        github
+        insta
+        pintrest
+        swimcloud
+        gmail
+        linkedin
+        snapchat
+4 Lianne's favorite things
+    Bible/God with favorite Bible verse
+    Food: Mexican food - birria tacos
+    Music: Kendrick Lamar, Gunna, Tame Impala, Vundabar, Wallows
