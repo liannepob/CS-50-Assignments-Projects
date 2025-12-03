@@ -1,0 +1,15 @@
+<!--creates the GET request method of the user so they can enter information for what stock they want to look up-->
+{% extends "layout.html" %}
+
+{% block title %}
+    Look Up Stock Information
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class = "mb-3">
+            <input autocomplete = "off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder = "Stock Symbol" type = "text">
+            <button class = "btn btn-primary" type = "submit">Quote</button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!--creates the POST request method of the user. uses the loop up function to show the name, and current price of the stock-->
+
+{% extends "layout.html" %}
+
+{% block start %}
+   Stock Information
+{% endblock %}
+<!--to get pass the values into the template it will look like: <p>{{var}}</p>-->
+
+{% block main %}
+    <p>
+        The stock you chose has the name/price/symbol of:
+    </p>
+    <p>Name: {{ name }}</p>
+    <p>Price: {{ price | usd }}</p>
+    <p>Symbol: {{ symbol }}</p>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <th>Bought or Sold: </th>
+            <th>Stock Symbol: </th>
+            <th>Price of Stock: </th>
+            <th>Number of Shares: </th>
+            <th>Time of Transaction: </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for item in data %}
+        <tr>
+            <td>{{ item["deal"] }}</td>
+            <td>{{ item["symbol"] }}</td>
+            <td>{{ item["price"] | usd }}</td>
+            <td>{{ item["shares"] }}</td>
+            <td>{{ item["time"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

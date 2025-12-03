@@ -1,0 +1,17 @@
+<!--asks the user for a stock symbol and number of shares
+    Checks for valid input from the user(no negative shares, and a valid stock symbol)-->
+{% extends "layout.html" %}
+
+{% block title %}
+    Buying Stocks
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class = "mb-3">
+            <input autocomplete = "off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder = "Stock Symbol" type = "text">
+            <input autocomplete = "off" class="form-control mx-auto w-auto" name="shares" placeholder = "Stock Shares" type = "text">
+            <button class = "btn btn-primary" type = "submit">Buy</button>
+        </div>
+    </form>
+{% endblock %}

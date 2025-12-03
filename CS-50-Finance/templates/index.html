@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index of Stocks
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <th>Symbol: </th>
+            <th>Shares: </th>
+            <th>Price: </th>
+            <th>Total: </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for stock in user_showcase %}
+        <tr>
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.shares }}</td>
+            <td>{{ stock.price | usd }}</td>
+            <td>{{ stock.total }}</td>
+        </tr>
+        {% endfor %}
+    <tr>
+        <td>The user's current cash balance is: {{ cash | usd }}</td>
+    </tr>
+    <tr>
+        <td>The user's total stock value is: {{ total_stock | usd }}</td>
+    </tr>
+    <tr>
+        <td>The user's grand total which are (Stocks + Cash) come out to: {{ final_total | usd }}</td>
+    </tr>
+    </tbody>
+
+</table>
+
+{% endblock %}

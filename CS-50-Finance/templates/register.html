@@ -1,0 +1,25 @@
+<!--this is inspired by login.html
+    this html file will get the intended username of the person, their intended passsword
+    as well as a confirmation of their password to be entered into the db-->
+{%extends "layout.html" %}
+
+{% block start %}
+    Register Here!
+{% endblock %}
+
+{% block main %}
+    <form action = "/register" method="post">
+        <div class ="mb-3"> <!--what this does it create a bootstrap class of a margin-->
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+            <!--copied from login.html since username is the same as login-->
+        </div>
+        <div class ="mb-3"> <!--now creating a password area-->
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+            <!--copied from login.html since password is the same as login-->
+        </div>
+        <div class ="mb-3"> <!--now confirming the password-->
+            <input class="form-control mx-auto w-auto" name="confirmation" placeholder="Confirm Password" type="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+{% endblock %}
