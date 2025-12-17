@@ -1,7 +1,5 @@
 # SwimJournal
 
-#### Video Demo: https://www.youtube.com/watch?v=39S1PSs4N6o
-
 #### Description:
 SwimJournal is a full-stack web application designed to help swimmers track training, recovery, and performance progression over time. The app allows users to log swims, lifts, races, and recovery metrics, then view personalized insights through dashboards and charts.
 
